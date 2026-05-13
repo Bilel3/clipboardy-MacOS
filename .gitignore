@@ -1,0 +1,29 @@
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Packaged app artifacts
+dist/
+*.app
+*.zip
+*.dmg
+*.pkg
+
+# Xcode user data
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Xcode / playground temporary files
+timeline.xctimeline
+playground.xcworkspace
+
+# macOS temporary files
+.TemporaryItems/
+.Trashes/
+
+# Logs
+*.log
