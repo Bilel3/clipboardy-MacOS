@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "Clipboardy-arm64-apple-macosx-release.exe": ["<Clipboardy-arm64-apple-macosx-release.exe>"]
+  "Clipboardy-arm64-apple-macosx-release.module": ["<Clipboardy-arm64-apple-macosx-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<Clipboardy-arm64-apple-macosx-release.exe>","<Clipboardy-arm64-apple-macosx-release.module>"]
+  "test": ["<Clipboardy-arm64-apple-macosx-release.exe>","<Clipboardy-arm64-apple-macosx-release.module>"]
+default: "main"
+nodes:
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/AppDelegate.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/ClipboardHistoryStore.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/ClipboardMonitor.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/HistoryPanel.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/HotKeyManager.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/LaunchAtLoginManager.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/main.swift"]
+    outputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/sources"]
+    description: "Write auxiliary file /Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/sources"
+
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/AppDelegate.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardHistoryStore.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardMonitor.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HistoryPanel.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HotKeyManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/LaunchAtLoginManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/main.swift.o"]
+    outputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.product/Objects.LinkFileList"
+
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<Clipboardy-arm64-apple-macosx-release.exe>":
+    tool: phony
+    inputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy"]
+    outputs: ["<Clipboardy-arm64-apple-macosx-release.exe>"]
+
+  "<Clipboardy-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/AppDelegate.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardHistoryStore.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardMonitor.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HistoryPanel.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HotKeyManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/LaunchAtLoginManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/main.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Modules/Clipboardy.swiftmodule"]
+    outputs: ["<Clipboardy-arm64-apple-macosx-release.module>"]
+
+  "C.Clipboardy-arm64-apple-macosx-release.exe":
+    tool: shell
+    inputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/AppDelegate.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardHistoryStore.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardMonitor.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HistoryPanel.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HotKeyManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/LaunchAtLoginManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/main.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.product/Objects.LinkFileList"]
+    outputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy"]
+    description: "Linking ./.build/arm64-apple-macosx/release/Clipboardy"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release","-o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy","-module-name","Clipboardy","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_Clipboardy_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.Clipboardy-arm64-apple-macosx-release.module":
+    tool: shell
+    inputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/AppDelegate.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/ClipboardHistoryStore.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/ClipboardMonitor.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/HistoryPanel.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/HotKeyManager.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/LaunchAtLoginManager.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/main.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/sources"]
+    outputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/AppDelegate.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardHistoryStore.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/ClipboardMonitor.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HistoryPanel.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/HotKeyManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/LaunchAtLoginManager.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/main.swift.o","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Modules/Clipboardy.swiftmodule"]
+    description: "Compiling Swift Module 'Clipboardy' (7 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","Clipboardy","-emit-dependencies","-emit-module","-emit-module-path","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Modules/Clipboardy.swiftmodule","-output-file-map","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/output-file-map.json","-whole-module-optimization","-num-threads","10","-c","@/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Clipboardy.build/sources","-I","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","Clipboardy_main","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","maccy_cheap_copy"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Package.swift","/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

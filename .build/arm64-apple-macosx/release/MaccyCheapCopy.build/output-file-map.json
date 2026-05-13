@@ -1,0 +1,43 @@
+{
+  "": {
+    "dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/MaccyCheapCopy.d",
+    "object": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/MaccyCheapCopy.o",
+    "swift-dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/primary.swiftdeps"
+  },
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/AppDelegate.swift": {
+    "object": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/AppDelegate.dia"
+  },
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/ClipboardHistoryStore.swift": {
+    "object": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardHistoryStore.swift.o",
+    "swiftmodule": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardHistoryStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardHistoryStore.swiftdeps",
+    "diagnostics": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardHistoryStore.dia"
+  },
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/ClipboardMonitor.swift": {
+    "object": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardMonitor.swift.o",
+    "swiftmodule": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardMonitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardMonitor.swiftdeps",
+    "diagnostics": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/ClipboardMonitor.dia"
+  },
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/HistoryPanel.swift": {
+    "object": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HistoryPanel.swift.o",
+    "swiftmodule": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HistoryPanel~partial.swiftmodule",
+    "swift-dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HistoryPanel.swiftdeps",
+    "diagnostics": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HistoryPanel.dia"
+  },
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/HotKeyManager.swift": {
+    "object": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HotKeyManager.swift.o",
+    "swiftmodule": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HotKeyManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HotKeyManager.swiftdeps",
+    "diagnostics": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/HotKeyManager.dia"
+  },
+  "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/Sources/main.swift": {
+    "object": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/main.swift.o",
+    "swiftmodule": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/main.swiftdeps",
+    "diagnostics": "/Users/bilelbayoudhi/Documents/Bilel/GCP-test/maccy-cheap-copy/.build/arm64-apple-macosx/release/MaccyCheapCopy.build/main.dia"
+  }
+}

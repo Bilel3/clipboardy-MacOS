@@ -1,0 +1,44 @@
+name: Clipboardy
+
+options:
+  bundleIdPrefix: com.bilel
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15"
+  generateEmptyDirectories: true
+  createIntermediateGroups: true
+
+targets:
+  Clipboardy:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources
+    entitlements:
+      path: Clipboardy.entitlements
+    info:
+      path: Clipboardy/Info.plist
+      properties:
+        CFBundleName: Clipboardy
+        CFBundleDisplayName: Clipboardy
+        CFBundleIdentifier: com.bilel.clipboardy
+        CFBundleVersion: "1"
+        CFBundleShortVersionString: "1.0"
+        CFBundleExecutable: $(EXECUTABLE_NAME)
+        CFBundlePackageType: APPL
+        # Hide dock icon — runs as a status-bar-only app
+        LSUIElement: true
+        NSAppleEventsUsageDescription: "Clipboardy uses Apple Events to simulate paste after selecting a clipboard item."
+        NSPrincipalClass: NSApplication
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.bilel.clipboardy
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_ENTITLEMENTS: Clipboardy.entitlements
+        ENABLE_HARDENED_RUNTIME: YES
+        # Disable sandbox so CGEventTap and CGEvent.post work
+        ENABLE_APP_SANDBOX: NO
+        INFOPLIST_FILE: Clipboardy/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
